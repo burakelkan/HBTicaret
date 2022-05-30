@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductDetailsViewController" customModule="HBTicaret" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="qVn-4w-DJn" id="vim-xC-37h"/>
+                <outlet property="nameLabel" destination="Phx-ie-Q3h" id="Kog-0w-dAH"/>
+                <outlet property="priceLabel" destination="Zmi-zU-j6t" id="6eu-sA-5j0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-4w-DJn">
+                    <rect key="frame" x="20" y="64" width="374" height="374"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qVn-4w-DJn" secondAttribute="height" id="Gx6-yq-OAZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dfasd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phx-ie-Q3h">
+                    <rect key="frame" x="20" y="458" width="374" height="224"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmi-zU-j6t">
+                    <rect key="frame" x="20" y="702" width="374" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kl-DB-RZ6">
+                    <rect key="frame" x="20" y="722" width="374" height="50"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Mağazalar">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionStoresButton:" destination="-1" eventType="touchUpInside" id="yl1-Rb-YlA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptC-he-PaB">
+                    <rect key="frame" x="20" y="792" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.3411764706" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7N6-7s-qcB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Sepete Ekle">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="actionAddToCartButton:" destination="-1" eventType="touchUpInside" id="hjd-9K-aoG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ptC-he-PaB" firstAttribute="top" secondItem="6kl-DB-RZ6" secondAttribute="bottom" constant="20" id="8Po-O2-dsL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Zmi-zU-j6t" secondAttribute="trailing" constant="20" id="BBX-4d-3Q1"/>
+                <constraint firstItem="qVn-4w-DJn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="DrZ-y8-fWy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ptC-he-PaB" secondAttribute="trailing" constant="20" id="HXz-qM-sli"/>
+                <constraint firstItem="6kl-DB-RZ6" firstAttribute="top" secondItem="Zmi-zU-j6t" secondAttribute="bottom" constant="20" id="IVQ-rR-5Tj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qVn-4w-DJn" secondAttribute="trailing" constant="20" id="L01-I5-7px"/>
+                <constraint firstItem="Zmi-zU-j6t" firstAttribute="top" secondItem="Phx-ie-Q3h" secondAttribute="bottom" constant="20" id="NGK-mZ-eDT"/>
+                <constraint firstItem="6kl-DB-RZ6" firstAttribute="leading" secondItem="ptC-he-PaB" secondAttribute="leading" id="NHI-Ab-oCx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ptC-he-PaB" secondAttribute="bottom" constant="20" id="OY1-T3-94E"/>
+                <constraint firstItem="6kl-DB-RZ6" firstAttribute="trailing" secondItem="ptC-he-PaB" secondAttribute="trailing" id="V89-mQ-iLL"/>
+                <constraint firstItem="Phx-ie-Q3h" firstAttribute="top" secondItem="qVn-4w-DJn" secondAttribute="bottom" constant="20" id="ahi-Gp-wWv"/>
+                <constraint firstItem="qVn-4w-DJn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gtN-HK-rKN"/>
+                <constraint firstItem="6kl-DB-RZ6" firstAttribute="height" secondItem="ptC-he-PaB" secondAttribute="height" id="luR-zP-jX2"/>
+                <constraint firstItem="Phx-ie-Q3h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="tDH-Ob-JDD"/>
+                <constraint firstItem="Zmi-zU-j6t" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ukM-xp-sKf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Phx-ie-Q3h" secondAttribute="trailing" constant="20" id="xwZ-kk-BNt"/>
+                <constraint firstItem="ptC-he-PaB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yU3-SB-CUi"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

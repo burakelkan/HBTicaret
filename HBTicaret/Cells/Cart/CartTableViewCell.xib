@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat_bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="montserrat_medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CartTableViewCell" customModule="Hygge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0Q-SN-1bI">
+                        <rect key="frame" x="20" y="20" width="335" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="saR-6V-S9J">
+                                <rect key="frame" x="8" y="8" width="84" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="saR-6V-S9J" secondAttribute="height" id="J49-qk-cBB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVb-lj-mT1">
+                                <rect key="frame" x="100" y="20" width="227" height="20"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltz-4M-UqA">
+                                <rect key="frame" x="100" y="60" width="227" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GVb-lj-mT1" firstAttribute="leading" secondItem="saR-6V-S9J" secondAttribute="trailing" constant="8" id="6ld-fY-z1d"/>
+                            <constraint firstAttribute="trailing" secondItem="GVb-lj-mT1" secondAttribute="trailing" constant="8" id="H37-As-8ey"/>
+                            <constraint firstAttribute="bottom" secondItem="saR-6V-S9J" secondAttribute="bottom" constant="8" id="I0g-du-AzG"/>
+                            <constraint firstAttribute="trailing" secondItem="Ltz-4M-UqA" secondAttribute="trailing" constant="8" id="I8i-d9-Vro"/>
+                            <constraint firstItem="saR-6V-S9J" firstAttribute="leading" secondItem="g0Q-SN-1bI" secondAttribute="leading" constant="8" id="IOp-4w-Yl1"/>
+                            <constraint firstItem="saR-6V-S9J" firstAttribute="top" secondItem="g0Q-SN-1bI" secondAttribute="top" constant="8" id="jp4-ej-eOD"/>
+                            <constraint firstItem="GVb-lj-mT1" firstAttribute="top" secondItem="g0Q-SN-1bI" secondAttribute="top" constant="20" id="vOh-Ex-CJv"/>
+                            <constraint firstItem="Ltz-4M-UqA" firstAttribute="top" secondItem="GVb-lj-mT1" secondAttribute="bottom" constant="20" id="xio-7G-ObY"/>
+                            <constraint firstItem="Ltz-4M-UqA" firstAttribute="leading" secondItem="saR-6V-S9J" secondAttribute="trailing" constant="8" id="yzI-yZ-MPH"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkm-ao-mSZ">
+                        <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="MJG-po-y27"/>
+                            <constraint firstAttribute="height" constant="40" id="qXf-rU-DdX"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="close"/>
+                        <connections>
+                            <action selector="actionRemoveButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yih-MY-34r"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g0Q-SN-1bI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="8fD-6a-oMw"/>
+                    <constraint firstItem="bkm-ao-mSZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="JSa-vZ-BXk"/>
+                    <constraint firstItem="g0Q-SN-1bI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="PiI-mZ-Hf6"/>
+                    <constraint firstAttribute="trailing" secondItem="bkm-ao-mSZ" secondAttribute="trailing" id="aT6-UG-cvr"/>
+                    <constraint firstAttribute="bottom" secondItem="g0Q-SN-1bI" secondAttribute="bottom" constant="20" id="o9S-6y-3Dh"/>
+                    <constraint firstAttribute="trailing" secondItem="g0Q-SN-1bI" secondAttribute="trailing" constant="20" id="ztU-YE-FiZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="productImageView" destination="saR-6V-S9J" id="qKF-h7-84r"/>
+                <outlet property="productNameLabel" destination="GVb-lj-mT1" id="d6S-fn-UO4"/>
+                <outlet property="productPriceLabel" destination="Ltz-4M-UqA" id="0jK-IL-QDb"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="131"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="41" height="41"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
